@@ -190,3 +190,12 @@ body {
 .btn-enviar:hover {
   background-color: #172554;
 }
+/* Pie de página propio */
+.pie-pagina {
+  background-color: #212529;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
