@@ -28,7 +28,7 @@
     </nav>
   </header>
 
-  <main class="flex-grow-1 py-5">
+  <main class="flex-grow-1 py-5"style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('img/fondito.jpg') center/cover no-repeat fixed;">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
@@ -46,13 +46,13 @@
                   <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required>
                 </div>
               </form>
-<!-- Segundo campo: Correo Electrónico -->
+  <!-- Correo Electrónico -->
                 <div class="mb-3">
                   <label for="email" class="form-label fw-bold">Correo Electrónico</label>
                   <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
                 </div>
 
-                <!-- Tercer campo: Menú desplegable para el Motivo -->
+                <!-- Motivo de el contacto -->
                 <div class="mb-3">
                   <label for="motivo" class="form-label fw-bold">Motivo del Contacto</label>
                   <select class="form-select" id="motivo" required>
@@ -63,7 +63,7 @@
                   </select>
                 </div>
 
-                <!-- NUEVO CAMPO: Selección de Alojamiento -->
+                <!-- Alojamiento -->
                 <div class="mb-3">
                   <label for="habitacion" class="form-label fw-bold">Alojamiento de interés</label>
                   <select class="form-select" id="habitacion" required>
@@ -74,12 +74,11 @@
                   </select>
                 </div>
                 
-                <!-- Cuarto campo: Área de texto para el Mensaje -->
+                <!--  Mensaje -->
                 <div class="mb-4">
                   <label for="mensaje" class="form-label fw-bold">Mensaje</label>
                   <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
                 </div>
-                
                 <!-- Botón de Envío -->
                 <div class="d-grid">
                   <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
