@@ -46,7 +46,44 @@
                   <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required>
                 </div>
               </form>
+<!-- Segundo campo: Correo Electrónico -->
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
 
+                <!-- Tercer campo: Menú desplegable para el Motivo -->
+                <div class="mb-3">
+                  <label for="motivo" class="form-label fw-bold">Motivo del Contacto</label>
+                  <select class="form-select" id="motivo" required>
+                    <option value="">Selecciona una opción...</option>
+                    <option value="reserva">Reserva de Alojamiento</option>
+                    <option value="tour">Consulta de Panoramas</option>
+                    <option value="duda">Duda General</option>
+                  </select>
+                </div>
+
+                <!-- NUEVO CAMPO: Selección de Alojamiento -->
+                <div class="mb-3">
+                  <label for="habitacion" class="form-label fw-bold">Alojamiento de interés</label>
+                  <select class="form-select" id="habitacion" required>
+                    <option value="">Selecciona el tipo de habitación...</option>
+                    <option value="premium">Refugio Cordillera Premium - Desde $180.000/noche</option>
+                    <option value="estandar">Cabañas Valle Cordillerano - Desde $90.000/noche</option>
+                    <option value="economico">Hostal Los Pinos - Desde $35.000/noche</option>
+                  </select>
+                </div>
+                
+                <!-- Cuarto campo: Área de texto para el Mensaje -->
+                <div class="mb-4">
+                  <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                
+                <!-- Botón de Envío -->
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                </div>
             </div>
           </div>
         </div>
