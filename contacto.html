@@ -4,90 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reserva y Contacto - Destino Cordillera</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Solo se enlaza tu CSS propio -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="d-flex flex-column min-vh-100 bg-light">
+<body class="cuerpo-pagina">
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a class="navbar-brand fw-bold text-uppercase tracking-wide" href="index.html">🏔️ Destino Cordillera</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuNavegacion">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="panoramas.html">Panoramas</a></li>
-            <li class="nav-item"><a class="nav-link" href="servicios.html">Alojamiento y Gastronomía</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contacto.html">Reserva y Contacto</a></li>
-          </ul>
-        </div>
+  <header class="cabecera">
+    <nav class="navegacion">
+      <div class="nav-contenedor">
+        <a class="nav-logo" href="index.html">🏔️ Destino Cordillera</a>
+        <ul class="nav-enlaces">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="panoramas.html">Panoramas</a></li>
+          <li><a href="servicios.html">Alojamiento y Gastronomía</a></li>
+          <li><a class="activo" href="contacto.html">Reserva y Contacto</a></li>
+        </ul>
       </div>
     </nav>
   </header>
 
-  <main class="flex-grow-1 py-5"style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('img/fondito.jpg') center/cover no-repeat fixed;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="card shadow-sm border-0">
-            
-            <img src="img/atencion.jpg" class="card-img-top" alt="Atención y Reservas" style="height: 200px; object-fit: cover;">
-            
-            <div class="card-body p-4 p-md-5">
-              <h1 class="fw-bold mb-3 text-center h2">Reserva y Contacto</h1>
-              <p class="text-muted text-center mb-4">Completa el formulario para consultar disponibilidad o resolver tus dudas. Te responderemos a la brevedad.</p>
-              
-              <form>
-                <div class="mb-3">
-                  <label for="nombre" class="form-label fw-bold">Nombre Completo</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required>
-                </div>
-              </form>
-  <!-- Correo Electrónico -->
-                <div class="mb-3">
-                  <label for="email" class="form-label fw-bold">Correo Electrónico</label>
-                  <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
-                </div>
-
-                <!-- Motivo de el contacto -->
-                <div class="mb-3">
-                  <label for="motivo" class="form-label fw-bold">Motivo del Contacto</label>
-                  <select class="form-select" id="motivo" required>
-                    <option value="">Selecciona una opción...</option>
-                    <option value="reserva">Reserva de Alojamiento</option>
-                    <option value="tour">Consulta de Panoramas</option>
-                    <option value="duda">Duda General</option>
-                  </select>
-                </div>
-
-                <!-- Alojamiento -->
-                <div class="mb-3">
-                  <label for="habitacion" class="form-label fw-bold">Alojamiento de interés</label>
-                  <select class="form-select" id="habitacion" required>
-                    <option value="">Selecciona el tipo de habitación...</option>
-                    <option value="premium">Refugio Cordillera Premium - Desde $180.000/noche</option>
-                    <option value="estandar">Cabañas Valle Cordillerano - Desde $90.000/noche</option>
-                    <option value="economico">Hostal Los Pinos - Desde $35.000/noche</option>
-                  </select>
-                </div>
-                
-                <!--  Mensaje -->
-                <div class="mb-4">
-                  <label for="mensaje" class="form-label fw-bold">Mensaje</label>
-                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                </div>
-                <!-- Botón de Envío -->
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
-                </div>
+  <main class="principal-contacto" style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('img/fondito.jpg') center/cover no-repeat fixed;">
+    <div class="contenedor-formulario">
+      <div class="tarjeta-contacto">
+        
+        <img src="img/atencion.jpg" class="imagen-tarjeta" alt="Atención y Reservas">
+        
+        <div class="cuerpo-tarjeta">
+          <h1 class="titulo-formulario">Reserva y Contacto</h1>
+          <p class="descripcion-formulario">Completa el formulario para consultar disponibilidad o resolver tus dudas. Te responderemos a la brevedad.</p>
+          
+          <form class="formulario">
+            <div class="grupo-input">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
             </div>
-          </div>
+
+            <div class="grupo-input">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" placeholder="nombre@ejemplo.com" required>
+            </div>
+
+            <div class="grupo-input">
+              <label for="motivo">Motivo del Contacto</label>
+              <select id="motivo" required>
+                <option value="">Selecciona una opción...</option>
+                <option value="reserva">Reserva de Alojamiento</option>
+                <option value="tour">Consulta de Panoramas</option>
+                <option value="duda">Duda General</option>
+              </select>
+            </div>
+
+            <div class="grupo-input">
+              <label for="habitacion">Alojamiento de interés</label>
+              <select id="habitacion" required>
+                <option value="">Selecciona el tipo de habitación...</option>
+                <option value="premium">Refugio Cordillera Premium - Desde $180.000/noche</option>
+                <option value="estandar">Cabañas Valle Cordillerano - Desde $90.000/noche</option>
+                <option value="economico">Hostal Los Pinos - Desde $35.000/noche</option>
+              </select>
+            </div>
+            
+            <div class="grupo-input">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            
+            <!-- El botón debe estar dentro de la etiqueta form -->
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+          </form>
         </div>
       </div>
     </div>
   </main>
+
 </body>
 </html>
