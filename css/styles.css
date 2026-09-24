@@ -12,3 +12,22 @@ body {
   color: var(--color-texto);
   margin: 0;
 }
+
+/* Espaciado del logo en el navbar */
+.tracking-wide {
+  letter-spacing: 1px;
+}
+
+/* Animacion simple al pasar el mouse por las cards */
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Redondear un poco los botones */
+.btn {
+  border-radius: 6px;
+}
